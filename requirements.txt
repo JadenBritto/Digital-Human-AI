@@ -1,0 +1,7 @@
+google-generativeai
+speechrecognition
+gTTS
+pygame
+opencv-python
+numpy
+pyaudio
