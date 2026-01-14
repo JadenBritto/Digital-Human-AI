@@ -15,7 +15,7 @@ from pydub import AudioSegment  # For audio conversion
 app = Flask(__name__)
 
 # --- CONFIGURATION ---
-GOOGLE_API_KEY = "AIzaSyBao3SWDR6ouZqLg7jUiSVdcQQKupZ9iBA"
+GOOGLE_API_KEY = ""
 # Path to Rhubarb executable
 RHUBARB_PATH = os.path.join(app.root_path, 'Rhubarb', 'Rhubarb-Lip-Sync-1.14.0-Windows', 'rhubarb.exe')
 MEMORY_FILE = "memory.json"
