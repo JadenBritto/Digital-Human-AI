@@ -1,5 +1,5 @@
 
-# 🤖 Striff Mirage - Digital Human AI Assistant
+# 🤖 Digital Human AI Assistant
 
 <div align="center">
 
@@ -538,9 +538,7 @@ in the Software without restriction...
 
 ---
 
-## 📞 Contact & Support
 
-<div align="center">
 
 **Found this project helpful? Give it a ⭐!**
 
@@ -549,6 +547,6 @@ in the Software without restriction...
 
 ---
 
-Made with ❤️ by the Striff Mirage Team
+Made with ❤️ by the Team Striff
 
 </div>
