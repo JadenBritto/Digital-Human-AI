@@ -149,7 +149,7 @@ For a detailed architecture diagram, see [resources/architecture.drawio.svg](res
 - **Google Gemini AI** (@langchain/google-genai) - Language model
 - **LangChain** - AI orchestration
 - **ElevenLabs** - Text-to-speech API
-- **OpenAI Whisper** (nodejs-whisper) - Speech-to-text
+- **AssemblyAI** (nodejs-whisper) - Speech-to-text
 - **CORS** - Cross-origin resource sharing
 - **dotenv** - Environment configuration
 
@@ -167,12 +167,58 @@ For a detailed architecture diagram, see [resources/architecture.drawio.svg](res
 - **API Keys** for:
   - Google Gemini AI
   - ElevenLabs
-  - OpenAI (for Whisper)
+  - AssemblyAi(for Whisper)
 
 </details>
 
 <details open>
 <summary><b>Step-by-Step Installation</b></summary>
+
+### Requirements
+
+prerequisites:
+
+---
+
+## Gemini Key
+You must have an **active Gemini Key**.
+
+Get it for free from Google AI Studio
+
+---
+
+## Eleven Labs Key
+You need to have a valid **Eleven Labs Key**.
+
+Sign up here:  
+https://elevenlabs.io/
+
+---
+
+## Rhubarb Lip-Sync
+Download the latest version of **Rhubarb Lip-Sync** for your operating system from the official repository:  
+https://github.com/DanielSWolf/rhubarb-lip-sync
+
+After downloading:
+
+1. Create a `/bin` directory in the backend.
+2. Extract the `rhubarb-lip-sync.zip` file.
+3. Move all extracted contents into the `/bin` directory.
+4. Grant execution permissions if your OS asks.
+
+---
+
+## FFmpeg
+Install **FFmpeg** on your system.
+
+- **MacOS:** `brew install ffmpeg`
+- **Linux:** `sudo apt install ffmpeg`
+- **Windows:** Download from https://ffmpeg.org/download.html and add it to PATH.
+
+---
+
+Once these requirements are installed, you’re ready to use the system.
+
 
 ### 1. Clone the Repository
 
@@ -203,17 +249,14 @@ touch .env
 Add the following environment variables:
 
 ```env
-# Google Gemini AI
-GOOGLE_API_KEY=your_google_gemini_api_key_here
+GEMINI_MODEL=
+GEMINI_API_KEY=
+ASSEMBLYAI_API_KEY=
 
-# ElevenLabs API
-ELEVEN_LABS_API_KEY=your_elevenlabs_api_key_here
-
-# OpenAI (for Whisper)
-OPENAI_API_KEY=your_openai_api_key_here
-
-# Server Configuration (optional)
-PORT=3000
+# Elevenlabs
+ELEVEN_LABS_API_KEY=
+ELEVEN_LABS_VOICE_ID=
+ELEVEN_LABS_MODEL_ID=eleven_multilingual_v2
 ```
 
 ### 4. Start the Development Server
