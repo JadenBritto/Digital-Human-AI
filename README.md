@@ -176,6 +176,13 @@ For a detailed architecture diagram, see [resources/architecture.drawio.svg](res
 
 ### Requirements
 
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Elson1603/Striff_Mirage.git
+cd Striff_Mirage
+```
+
 prerequisites:
 
 ---
@@ -219,13 +226,6 @@ Install **FFmpeg** on your system.
 
 Once these requirements are installed, you’re ready to use the system.
 
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/Elson1603/Striff_Mirage.git
-cd Striff_Mirage
-```
 
 ### 2. Install Dependencies
 
